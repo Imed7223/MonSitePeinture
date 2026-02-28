@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peinture & Déco - Lyon</title>
+    <style>
+        /* 1. Couleurs et Style Général */
+        body { font-family: 'Poppins', sans-serif; margin: 0; color: #2d3436; line-height: 1.6; background-color: #f9f9f9; }
+        
+        /* 2. Header avec Image de Peintre (Haute Qualité) */
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            padding: 120px 20px; 
+            text-align: center;
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        header p { font-size: 1.4rem; font-weight: 300; }
+
+        /* 3. Bouton d'appel "Or" pour le côté premium */
+        .cta-button { 
+            display: inline-block;
+            background: #d4af37; /* Couleur Or */
+            color: white; 
+            padding: 18px 40px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            margin-top: 20px;
+        }
+        .cta-button:hover { background: #c2a032; transform: translateY(-3px); }
+
+        /* 4. Section Services */
+        .services { display: flex; justify-content: center; gap: 30px; padding: 60px 20px; flex-wrap: wrap; }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            width: 300px;
+            text-align: center;
+            border-top: 5px solid #d4af37;
+        }
+        .card h3 { color: #2d3436; font-size: 1.5rem; }
+
+        /* 5. Formulaire de Devis */
+        .contact-section { background: #2d3436; color: white; padding: 60px 20px; text-align: center; }
+        form { max-width: 500px; margin: 30px auto 0; background: white; padding: 30px; border-radius: 10px; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; box-sizing: border-box; }
+        .submit-btn { width: 100%; background: #2d3436; color: white; padding: 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+        .submit-btn:hover { background: #000; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Art & Peinture Grenoble</h1>
+        <p>Redonnez vie à vos murs avec des finitions d'exception.</p>
+        <a href="tel:0600000000" class="cta-button">📞 DEMANDER UN DEVIS PAR TÉLÉPHONE</a>
+    </header>
+
+    <section class="services">
+        <div class="card">
+            <h3>🎨 Peinture Intérieure</h3>
+            <p>Murs, plafonds et boiseries. Pose de peintures mates, satinées ou veloutées.</p>
+        </div>
+        <div class="card">
+            <h3>🏠 Ravalement Façade</h3>
+            <p>Protection et décoration de vos murs extérieurs avec des produits durables.</p>
+        </div>
+        <div class="card">
+            <h3>🖼️ Papier Peint</h3>
+            <p>Pose soignée de papiers peints panoramiques et revêtements muraux.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Votre projet commence ici</h2>
+        <p>Recevez un devis détaillé sous 24h gratuitement.</p>
+        
+        <form action="https://formspree.io/f/ton_id_ici" method="POST">
+            <input type="text" name="name" placeholder="Votre Nom complet" required>
+            <input type="tel" name="phone" placeholder="Votre Téléphone" required>
+            <textarea name="message" placeholder="Détails de votre projet (nombre de pièces, surface...)" rows="4"></textarea>
+            <button type="submit" class="submit-btn">ENVOYER MA DEMANDE</button>
+        </form>
+    </section>
+
+</body>
+</html>
